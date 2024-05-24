@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="HojasPacientesGlaucoma.xslt"?>
+
+<!--<!DOCTYPE Detector_Glaucoma []>--> <!-- For the internal DTD -->
+
+<Detector_Glaucoma  xsi:noNamespaceSchemaLocation="HojasPacientesGlaucoma.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Logo ruta="C:\Users\Usuario\Desktop\3. maila\Segundo Cuatri\PBL6\HIS\imagenes/Logo.png"/>
+	<Logo2 ruta="C:\Users\Usuario\Desktop\3. maila\Segundo Cuatri\PBL6\HIS\imagenes/Logo2.png"/>
+	<Paciente id= "5823A">
+		<Nombre>Maria</Nombre>
+		<Apellido1>Garcia</Apellido1>
+		<Apellido2>Zabala</Apellido2>
+		<Edad>20</Edad>
+		<Peso>60</Peso>
+		<Altura>162</Altura>
+		<Centro>Txagorritxu</Centro>
+		<Fecha>2024-04-30</Fecha>
+		<Resultados>
+			<Calidad_Imagen>Imagen No Revisada</Calidad_Imagen>
+			<Glaucoma>No</Glaucoma>
+			<imagen ruta=""/>
+		</Resultados>
+	</Paciente>
+	<Paciente id= "2129Z">
+		<Nombre>Juan Pedro</Nombre>
+		<Apellido1>Troconiz</Apellido1>
+		<Apellido2>Lopez de Juan</Apellido2>
+		<Edad>61</Edad>
+		<Peso>65.3</Peso>
+		<Altura>170</Altura>
+		<Centro>Cruces</Centro>
+		<Fecha>2024-04-28</Fecha>
+		<Resultados>
+			<Calidad_Imagen>Bajo Contraste</Calidad_Imagen>
+			<Glaucoma>Si</Glaucoma>
+			<imagen ruta="C:\Users\Usuario\Desktop\3. maila\Segundo Cuatri\PBL6\HIS\Imagenes/imagenBC_G.jpg"/>
+		</Resultados>
+	</Paciente>
+	<Paciente id= "5412F">
+		<Nombre>Marta</Nombre>
+		<Apellido1>Gonzalez</Apellido1>
+		<Apellido2>Zabalo</Apellido2>
+		<Edad>47</Edad>
+		<Peso>72</Peso>
+		<Altura>181</Altura>
+		<Centro>Txagorritxu</Centro>
+		<Fecha>2024-05-02</Fecha>
+		<Resultados>
+			<Calidad_Imagen>Ruido</Calidad_Imagen>
+			<Glaucoma>No</Glaucoma>
+			<imagen ruta=""/>
+		</Resultados>
+	</Paciente>
+	<Paciente id= "1563S">
+		<Nombre>Juan Pablo</Nombre>
+		<Apellido1>Diaz</Apellido1>
+		<Apellido2>Blanco</Apellido2>
+		<Edad>34</Edad>
+		<Peso>72</Peso>
+		<Altura>176</Altura>
+		<Centro>Donostia</Centro>
+		<Fecha>2024-05-01</Fecha>
+		<Resultados>
+			<Calidad_Imagen>Calidad Correcta</Calidad_Imagen>
+			<Glaucoma>Si</Glaucoma>
+			<imagen ruta="C:\Users\Usuario\Desktop\3. maila\Segundo Cuatri\PBL6\HIS\Imagenes/image_0077.jpg"/>
+		</Resultados>
+	</Paciente>
+	<Paciente id= "8452R">
+		<Nombre>Javier</Nombre>
+		<Apellido1>Aretxabaleta</Apellido1>
+		<Apellido2>Gomez</Apellido2>
+		<Edad>57</Edad>
+		<Peso>92</Peso>
+		<Altura>191</Altura>
+		<Centro>Alto Deba</Centro>
+		<Fecha>2024-04-29</Fecha>
+		<Resultados>
+			<Calidad_Imagen>Desenfoque</Calidad_Imagen>
+			<Glaucoma>No</Glaucoma>
+			<imagen ruta=""/>
+		</Resultados>
+	</Paciente>
+	<Paciente id= "7418H">
+		<Nombre>Gorka</Nombre>
+		<Apellido1>Ollora</Apellido1>
+		<Apellido2>Huerto</Apellido2>
+		<Edad>11</Edad>
+		<Peso>41</Peso>
+		<Altura>140</Altura>
+		<Centro>Cruces</Centro>
+		<Fecha>2024-05-02</Fecha>
+		<Resultados>
+			<Calidad_Imagen>Ruido</Calidad_Imagen>
+			<Glaucoma>No</Glaucoma>
+			<imagen ruta=""/>
+		</Resultados>
+	</Paciente>
+	<Paciente id= "5296F">
+		<Nombre>Jon</Nombre>
+		<Apellido1>Baiona</Apellido1>
+		<Apellido2>Zamora</Apellido2>
+		<Edad>41</Edad>
+		<Peso>80.5</Peso>
+		<Altura>182</Altura>
+		<Centro>Alto Deba</Centro>
+		<Fecha>2024-05-01</Fecha>
+		<Resultados>
+			<Calidad_Imagen>Bajo Contraste</Calidad_Imagen>
+			<Glaucoma>Si</Glaucoma>
+			<imagen ruta="C:\Users\Usuario\Desktop\3. maila\Segundo Cuatri\PBL6\HIS\Imagenes/imagenBC_G2.jpg"/>
+		</Resultados>
+	</Paciente>
+	<Paciente id= "1596C">
+		<Nombre>Ane</Nombre>
+		<Apellido1>Saez</Apellido1>
+		<Apellido2>De la Fuente</Apellido2>
+		<Edad>54</Edad>
+		<Peso>65</Peso>
+		<Altura>168</Altura>
+		<Centro>Txagorritxu</Centro>
+		<Fecha>2024-04-30</Fecha>
+		<Resultados>
+			<Calidad_Imagen>Calidad Correcta</Calidad_Imagen>
+			<Glaucoma>Si</Glaucoma>
+			<imagen ruta="C:\Users\Usuario\Desktop\3. maila\Segundo Cuatri\PBL6\HIS\Imagenes/imagenCC_G.jpg"/>
+		</Resultados>
+	</Paciente>
+	<Paciente id= "4129E">
+		<Nombre>Unai</Nombre>
+		<Apellido1>Ochoa</Apellido1>
+		<Apellido2>Retana</Apellido2>
+		<Edad>18</Edad>
+		<Peso>53</Peso>
+		<Altura>180</Altura>
+		<Centro>Cruces</Centro>
+		<Fecha>2024-05-01</Fecha>
+		<Resultados>
+			<Calidad_Imagen>Calidad Correcta</Calidad_Imagen>
+			<Glaucoma>No</Glaucoma>
+			<imagen ruta=""/>
+		</Resultados>
+	</Paciente>
+	<Paciente id= "4271X">
+		<Nombre>Amaia</Nombre>
+		<Apellido1>Guridi</Apellido1>
+		<Apellido2>Perales</Apellido2>
+		<Edad>60</Edad>
+		<Peso>72.5</Peso>
+		<Altura>173</Altura>
+		<Centro>Cruces</Centro>
+		<Fecha>2024-05-02</Fecha>
+		<Resultados>
+			<Calidad_Imagen>Desenfoque</Calidad_Imagen>
+			<Glaucoma>Si</Glaucoma>	
+			<imagen ruta="C:\Users\Usuario\Desktop\3. maila\Segundo Cuatri\PBL6\HIS\Imagenes/imagenD_G.jpg"/>
+		</Resultados>
+	</Paciente>
+	<Paciente id= "7894J">
+		<Nombre>Julen</Nombre>
+		<Apellido1>Gomez</Apellido1>
+		<Apellido2>Pesos</Apellido2>
+		<Edad>51</Edad>
+		<Peso>85</Peso>
+		<Altura>171</Altura>
+		<Centro>Txagorritxu</Centro>
+		<Fecha>2024-05-01</Fecha>
+		<Resultados>
+			<Calidad_Imagen>Ruido</Calidad_Imagen>
+			<Glaucoma>No</Glaucoma>
+			<imagen ruta=""/>
+		</Resultados>
+	</Paciente>
+	<Paciente id= "5678D">
+		<Nombre>Oier</Nombre>
+		<Apellido1>Leon</Apellido1>
+		<Apellido2>Luis</Apellido2>
+		<Edad>40</Edad>
+		<Peso>70</Peso>
+		<Altura>180</Altura>
+		<Centro>Cruces</Centro>
+		<Fecha>2024-04-30</Fecha>
+		<Resultados>
+			<Calidad_Imagen>Imagen No Revisada</Calidad_Imagen>
+			<Glaucoma>No</Glaucoma>
+			<imagen ruta=""/>
+		</Resultados>
+	</Paciente>
+</Detector_Glaucoma>

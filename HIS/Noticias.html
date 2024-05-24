@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="css/Noticias.css">
+</head>
+<body>
+
+
+	<div class= "head">
+			
+		<div class= "logo">
+			<a href="#">EYETECH<img src="Logo.png" alt="Logo de la empresa" style="float:left; width:70px" class= "imagen"/></a>
+		</div>
+		
+		<nav class="navegacion">
+			<a href="inicio.html" class="active">Inicio</a>
+			<a href="Servicios.html" >Servicios</a>
+			<a href="Conocenos.html">Conócenos</a>
+			<a href="Contacto.html">Contacto</a>
+			<div class="cuadrado-vacio"><a href="Acceso_Eyetech.html">INICIAR SESIÓN</a></div>
+		</nav>
+				
+	</div>
+	
+		<header class= "content header">
+			<h1></h1>
+			<p></p>
+		</header>
+			
+   <div class="fila">
+            <div class="noticia">
+                <img src="Imagenes/Alianza.jpg" alt="Alianza con OftalmoTech">
+                <h2>EyeTech se asocia con OftalmoTech para ampliar el alcance global</h2>
+                  <p class="contenido">EyeTech, líder en tecnología para la detección temprana del glaucoma, ha anunciado una nueva alianza estratégica con OftalmoTech, una empresa líder en el sector oftalmológico. La alianza tiene como objetivo expandir el acceso a la tecnología de detección de glaucoma desarrollada por EyeTech a más regiones del mundo.</p>
+                <p><a href="#" class="leer-mas">Leer más</a></p>
+            </div>
+
+            <div class="noticia">
+                <img src="Imagenes/Investigacion.jpg" alt="Investigación en EyeTech">
+                <h2>EyeTech anuncia importantes avances en investigación del glaucoma</h2>
+               <p class="contenido">EyeTech ha compartido los resultados de sus últimas investigaciones en el campo del glaucoma. El equipo de investigación de la empresa ha logrado importantes avances en la comprensión de los mecanismos subyacentes de la enfermedad, lo que podría llevar a nuevos métodos de diagnóstico y tratamiento en el futuro.</p>
+                <p><a href="#" class="leer-mas">Leer más</a></p>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="noticia">
+                <img src="Imagenes/Logo.png" alt="Nuevo logo de EyeTech">
+                <h2>EyeTech revela su nuevo logotipo y marca corporativa</h2>
+                  <p class="contenido">EyeTech ha presentado hoy su nuevo logotipo y marca corporativa. La actualización del logo refleja el compromiso continuo de la empresa con la innovación y la excelencia en el campo de la detección del glaucoma. El diseño moderno y dinámico representa la visión futurista de EyeTech y su enfoque centrado en el paciente.</p>
+                <p><a href="#" class="leer-mas">Leer más</a></p>
+            </div>
+
+            <div class="noticia">
+                <img src="Imagenes/DetectarGlaucoma.jpg" alt="Avance tecnológico en detección de glaucoma">
+                <h2>EyeTech introduce nuevo método no invasivo para la detección temprana del glaucoma</h2>
+                <p class="contenido">EyeTech ha anunciado el desarrollo de un revolucionario método no invasivo para la detección temprana del glaucoma. El nuevo sistema utiliza inteligencia artificial y análisis de imágenes para identificar signos tempranos de la enfermedad con una precisión sin precedentes, lo que permite a los oftalmólogos diagnosticar y tratar el glaucoma en sus etapas iniciales.</p>
+                <p><a href="#" class="leer-mas">Leer más</a></p>
+            </div>
+        </div>
+	</div>
+			
+    <script>
+			document.addEventListener('DOMContentLoaded', function() {
+			const enlacesLeerMas = document.querySelectorAll('.leer-mas');
+
+			enlacesLeerMas.forEach(function(enlace) {
+				enlace.addEventListener('click', function(event) {
+					event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+					const contenido = this.parentElement.previousElementSibling;
+					contenido.classList.toggle('mostrar'); // Alternar la clase 'mostrar' para el contenido
+				});
+			});
+		});
+	</script>
+	
+	<div class="footer">
+			<div class="footer-content">
+				 <div class="logo">
+					<img src="Logo.png" alt="Logo de la empresa">
+				</div>
+				<div class="left-content">
+					<p>© 2024 EYETECH</p>
+					<p> Maestro García Rivero,2, - Bilbao</p>
+					<p>Tel.: +34 632 254 112</p>
+					<p>Correo electrónico: eyetech@gmail.com</p>
+				</div>
+				<div class="right-content">
+					<a href="#">POLÍTICA DE PRIVACIDAD</a>
+					<a href="#">POLÍTICA DE COOKIES</a>
+					<a href="#">AVISO LEGAL</a>
+				</div>
+				
+				<div class="social-icons">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<!-- Agregar más iconos según sea necesario -->
+				</div>
+			</div>
+		</div>
+	
+	
+</body>
+</html>

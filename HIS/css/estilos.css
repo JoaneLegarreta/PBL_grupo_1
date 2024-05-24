@@ -1,0 +1,40 @@
+/* Se definen los estilos CSS */
+
+h1 {
+    color: blue; /* Corrección del color */
+	text-align: center;
+	font-size: 4em;
+	font-weight: bold; /* Grosor del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efecto de sombra */
+}
+
+h3 {
+	text-align: center;
+}
+
+footer {
+    color: black;
+    margin-left:25px;
+    width: 100%;
+}
+
+.estilo-tabla {
+    border-collapse: collapse;
+	width: 100%; /* Ancho de las celdas */
+    height: 100%; /* Altura de las celdas */
+    border: 1;
+    text-align: center;
+}
+
+h2 {
+    color: black; /* Corrección del color */
+	margin-left:575px;
+}
+
+.estilo2-tabla {
+	border-collapse: collapse;
+	width: 100%; /* Ancho de las celdas */
+    height: 100%; /* Altura de las celdas */
+    border: 1;
+    text-align: center;	
+}

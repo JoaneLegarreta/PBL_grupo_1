@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/inicio.css" >
+		<title>EYETECH</title>
+		<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+	</head>
+			
+	<body>
+	
+		<div class= "head">
+			
+				<div class= "logo">
+					<a href="#">EYETECH<img src="Logo.png" alt="Logo de la empresa" style="float:left; width:70px" class= "imagen"/></a>
+				</div>
+				
+				<nav class="navegacion">
+					<a href="#" class="active">Inicio</a>
+					<a href="Servicios.html" >Servicios</a>
+					<a href="Conocenos.html">Conócenos</a>
+					<a href="Contacto.html">Contacto</a>
+					<div class="cuadrado-vacio"><a href="Acceso_Eyetech.html">INICIAR SESIÓN</a></div>
+				</nav>
+				
+			</div>
+			<header class= "content header">
+			<h1></h1>
+			<p></p>
+			</header>
+			
+			<h2></h2>
+			<p>¡Bienvenidos a Eetech!</p>
+
+			<div class="slideshow-container">
+			
+						<div id="image1" class="mySlides fade">
+					<a href="QueEsG.html">
+						<img src="Imagenes/NervioPaciente.jpg" style="width:100%" alt="Imagen 1" id= "image1">
+					</a>
+					<a href="#image5" class="prev">&#10094;</a>
+					<a href="#image2" class="next">&#10095;</a>
+					<div class="texto-sobre-imagen2">
+						<h2>EL GLAUCOMA</h2>
+					</div>
+					<div class="text">Eyetech</div>
+				</div>
+
+				<div id="image2" class="mySlides fade">
+					<a href="Servicios.html">
+						<img src="Imagenes/NormalVsGlaucoma.png" style="width:100%" alt="Imagen 2"  id= "image2">
+					</a>
+					<a href="#image1" class="prev">&#10094;</a>
+					<a href="#image3" class="next">&#10095;</a>
+					<div class="texto-sobre-imagen2">
+						<h2>Servicios</h2>
+					</div>
+					<div class="text">Eyetech</div>
+				</div>
+
+				<div id="image3" class="mySlides fade">
+					<a href="Conocenos.html">
+						<img src="Imagenes/Inicio2.png" style="width:100%" alt="Imagen 3"  id= "image3">
+					</a>
+					<a href="#image2" class="prev">&#10094;</a>
+					<a href="#image4" class="next">&#10095;</a>
+					<div class="texto-sobre-imagen2">
+						<h2>Start up</h2>
+					</div>
+					<div class="text">Eyetech</div>
+				</div>
+
+				<div id="image4" class="mySlides fade">
+					<a href="QueEsG.html">
+						<img src="Imagenes/Inicio3.png" style="width:100%" alt="Imagen 4"  id= "image4">
+					</a>
+					<a href="#image3" class="prev">&#10094;</a>
+					<a href="#image5" class="next">&#10095;</a>
+					<div class="texto-sobre-imagen2">
+						<h2>Información</h2>
+					</div>
+					<div class="text">Eyetech</div>
+				</div>
+
+				<div id="image5" class="mySlides fade">
+					<a href="QueEsG.html">
+						<img src="Imagenes/GlaucomaLaser.jpg" style="width:100%" alt="Imagen 5"  id= "image5">
+					</a>
+					<a href="#image4" class="prev">&#10094;</a>
+					<a href="#image1" class="next">&#10095;</a>
+					<div class="texto-sobre-imagen2">
+						<h2>Noticias</h2>
+					</div>
+					<div class="text">Eyetech</div>
+				</div>
+
+			</div>
+			
+			<br>
+
+			<div style="text-align:center">
+						<a href="#image1" class="dot"></a>
+						<a href="#image2" class="dot"></a>
+						<a href="#image3" class="dot"></a>
+						<a href="#image4" class="dot"></a>
+						<a href="#image5" class="dot"></a>
+			</div>
+			
+			
+
+			<script>
+				let slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				  }
+				  slideIndex++;
+				  if (slideIndex > slides.length) {slideIndex = 1}    
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				  setTimeout(showSlides, 4000); // Change image every 4 seconds
+				}
+			</script>
+
+		<section class="extrainfo" id="extrainfo">
+			<div class="box-container">
+				<div class="box">
+					<i class="fas fa-thumbs-up"></i>
+					<h3>Pago</h3>
+					<p>%100 Seguro</p>
+				</div>
+				
+				<div class="box">
+					<i class="fas fa-wrench"></i>
+					<h3>Garantia de Devolución</h3>
+				</div>
+				
+				<div class="box">
+					<i class="fas fa-headset"></i>
+					<h3>Atención al Cliente</h3>
+					<p>Personalizada 24h</p>
+				</div>
+				
+				<div class="box">
+					<i class="fas fa-award"></i>
+					<h3>Certificaciones y premios</h3>
+					<p></p>
+				</div>
+				<div class="box">
+					<i class="fas fa-user-secret"></i>
+					<h3>Política de privacidad</h3>
+				</div>
+			</div>
+		</section>
+			
+				
+		<section class= "content contact" id ="content contact">
+			<h2 class="title"> Contacto </h2>
+			<a href="Contacto.html" class= "btn-contact">Contáctanos ahora</a>
+			<p></p>
+			<p>o, ¡visitanos en el centro de EYETECH!</p>
+			<figure class= "map"> 
+				<img src="mapa.png" alt="mapa" height="220px" width="100%" />
+			</figure>
+		</section>
+			
+		<div class="footer">
+			<div class="footer-content">
+				 <div class="logo">
+					<img src="Logo.png" alt="Logo de la empresa">
+				</div>
+				<div class="left-content">
+					<p>© 2024 EYETECH</p>
+					<p> Maestro García Rivero,2, - Bilbao</p>
+					<p>Tel.: +34 632 254 112</p>
+					<p>Correo electrónico: eyetech@gmail.com</p>
+				</div>
+				<div class="right-content">
+					<a href="#">POLÍTICA DE PRIVACIDAD</a>
+					<a href="#">POLÍTICA DE COOKIES</a>
+					<a href="#">AVISO LEGAL</a>
+				</div>
+				
+				<div class="social-icons">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<!-- Agregar más iconos según sea necesario -->
+				</div>
+			</div>
+		</div>
+	
+	</body>
+</html>	

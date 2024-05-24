@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/html_contacto.css" >
+		<title>EYETECH</title>
+		<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+	</head>
+			
+	<body>
+		<div class= "head">
+		
+			<div class= "logo">
+				<a href="#">EYETECH<img src="Logo.png" alt="Logo de la empresa" style="float:left; width:70px" class= "imagen"/></a>
+			</div>
+			
+			<nav class="navegacion">
+					<a href="inicio.html" class="active">Inicio</a>
+					<a href="Servicios.html" >Servicios</a>
+					<a href="Conocenos.html">Conócenos</a>
+					<a href="Contacto.html">Contacto</a>
+					<div class="cuadrado-vacio"><a href="Acceso_Eyetech.html">INICIAR SESIÓN</a></div>
+				</nav>
+		</div>
+		<div class="contact_form">
+			<div class="formulario">      
+			  <h1>Formulario de contacto</h1>
+				  <form action="submeter-formulario.php" method="post">       
+					<p>
+					  <label for="nombre" class="colocar_nombre">Nombre
+						<span class="obligatorio">*</span>
+					  </label>
+					  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+					</p>
+
+					<p>
+					  <label for="email" class="colocar_email">Email
+						<span class="obligatorio">*</span>
+					  </label>
+					  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+					</p>
+
+					<p>
+					  <label for="telefone" class="colocar_telefono">Teléfono
+					  </label>
+					  <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+					</p>    
+
+					<p>
+					  <label for="tema" class="colocar_asunto">Asunto
+						<span class="obligatorio">*</span>
+					  </label>
+					  <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+					</p>    
+
+					<p>
+					  <label for="mensaje" class="colocar_mensaje">Mensaje
+						<span class="obligatorio">*</span>
+					  </label>                     
+					  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario"></textarea> 
+					</p>            
+					  
+						<button onclick="enviarMensaje()">Enviar</button>
+
+						<script>
+							function enviarMensaje() {
+
+							  var nombre = document.getElementById("nombre").value;
+							  var email = document.getElementById("email").value;
+
+
+							  // Verificar si los campos están completos
+							  if (nombre !== "" && email !== "") {
+								// Mostrar mensaje de confirmación si los campos están completos
+								alert("¡Se ha enviado correctamente!");
+							  } else {
+								// Mostrar un mensaje de advertencia si los campos están incompletos
+								alert("Por favor, complete todos los campos antes de enviar.");
+							  }
+							}
+						</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

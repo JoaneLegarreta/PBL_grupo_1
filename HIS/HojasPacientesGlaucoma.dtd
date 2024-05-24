@@ -1,0 +1,20 @@
+<!ELEMENT Detector_Glaucoma (Logo, Logo2,Paciente+)>
+<!ELEMENT Logo (#PCDATA)>
+<!ATTLIST Logo ruta CDATA #REQUIRED>
+<!ELEMENT Logo2 (#PCDATA)>
+<!ATTLIST Logo2 ruta CDATA #REQUIRED>
+<!ELEMENT Paciente (Nombre, Apellido1, Apellido2, Edad, Peso, Altura, Centro, Fecha, Resultados)>
+<!ATTLIST Paciente id CDATA #REQUIRED>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Apellido1 (#PCDATA)>
+<!ELEMENT Apellido2 (#PCDATA)>
+<!ELEMENT Edad (#PCDATA)>
+<!ELEMENT Peso (#PCDATA)>
+<!ELEMENT Altura (#PCDATA)>
+<!ELEMENT Centro (#PCDATA)>
+<!ELEMENT Fecha (#PCDATA)>
+<!ELEMENT Resultados (Calidad_Imagen, Glaucoma, imagen)>
+<!ELEMENT Calidad_Imagen (#PCDATA)>
+<!ELEMENT Glaucoma (#PCDATA)>
+<!ELEMENT imagen EMPTY>
+<!ATTLIST imagen ruta CDATA #REQUIRED>

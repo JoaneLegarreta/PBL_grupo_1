@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Detector_Glaucoma">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Logo" maxOccurs="1">
+					<xs:complexType>
+						<xs:attribute name="ruta" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Logo2" maxOccurs="1">
+					<xs:complexType>
+						<xs:attribute name="ruta" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Paciente" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name= "Nombre">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										 <xs:pattern value="[A-Z][a-z]+(?: [A-Z][a-z]+)?"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name= "Apellido1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										 <xs:pattern value="[A-Za-z]+( [A-Za-z][a-z]+)*"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name= "Apellido2">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="[A-Za-z]+( [A-Za-z][a-z]+)*"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name= "Edad">
+								<xs:simpleType>
+									<xs:restriction base= "xs:integer">
+										<xs:minInclusive value="0"/>
+										<xs:maxInclusive value="110"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name= "Peso">
+								<xs:simpleType>
+									<xs:restriction base= "xs:decimal">
+										<xs:minInclusive value="0"/>
+										<xs:maxInclusive value="250"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name= "Altura">
+								<xs:simpleType>
+									<xs:restriction base= "xs:integer">
+										<xs:minInclusive value="0"/>
+										<xs:maxInclusive value="250"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name= "Centro" type ="xs:string"/>
+							<xs:element name= "Fecha">
+								<xs:simpleType>
+									<xs:restriction base="xs:date">
+										<xs:minInclusive value="2024-04-28"/>
+										<xs:maxInclusive value="2024-05-03"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name= "Resultados">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name= "Calidad_Imagen">
+											<xs:simpleType>
+												<xs:restriction base ="xs:string">
+													<xs:pattern value = "Imagen No Revisada|Bajo Contraste|Desenfoque|Ruido|Calidad Correcta"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name= "Glaucoma">
+											<xs:simpleType>
+												<xs:restriction base ="xs:string">
+													<xs:pattern value = "Si|No"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="imagen" maxOccurs="1">
+											<xs:complexType>
+												<xs:attribute name="ruta" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="id">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:pattern value= "[0-9]{4}[A-Z]{1}"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
