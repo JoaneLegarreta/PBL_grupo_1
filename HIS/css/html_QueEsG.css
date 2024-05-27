@@ -1,199 +1,81 @@
-*{
-	margin: 0;
-	padding: 0;
-	border:0;
-	font-size:100%;
-	vertical-align: baseline;
-}
-html {
-	overflow-x: hidden; /*"hidden" significa que cualquier contenido que se desborde horizontalmente (es decir, que sea más ancho que el contenedor) será ocultado*/
-}
-body {
-	font-family: Arial, sans-serif;
-	text-align: left;
-	background: lightgray;
-	background-color: #ecf0f1;
-    }
-	
-.cuadrado-vacio {
-  display: inline-block;
-  padding: 3px; /* Ajusta el tamaño del cuadrado */
-  border: 2px solid white;
-  margin: 6px; /* Espacio alrededor del cuadrado */
-  font-size: 20px; /* Tamaño del texto */
-  line-height: 1; /* Ajusta la altura del cuadrado */
-  color: fff;
-  align-items: center;
-  
-}
-.header{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.imagen{
-	margin-top:15px;
-	width:30px;
-	margin-right:10px;
-}
-.head{
-	display: flex;
-	align-items: left;
-	justify-content: space-between;
-	height: 80px;
-	background: #2c3e50;
-	position:fixed;
-	width: 100%;
-	z-index: 100;
+/* Estilos para las secciones */
+main {
+    padding: 30px;
 }
 
-.navegacion{
-	display:flex;
-	margin-right: 10px;
-	align-items: center;
+.section {
+    background-color: #fff;
+    padding: 40px 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.logo{
-	margin-left:50px;
-	
-}
-.logo a{
-	text-decoration: none;
-	color: #fff;
-	text-transform: uppercase;
-	user-select: none;
-	font-size: 60px;
-	cursor: pointer;
-}
-	
-.navegacion a{
-	display: block;
-	padding: 23px 20px;
-	color: #fff;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 20px;
-	 align-items: center;
+.section h2 {
+    color: #50b3a2;
+    margin-bottom: 10px;
+	font-size:20px;
 }
 
-.navegacion  a:hover {
-	background: #3f3f3f;
-	
+.section p {
+    color: #555;
+    line-height: 1.6;
+	font-size:16px;
 }
 
-.header{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.header{
-	height: 5vh !important;
-	background: lightgray;
-}
-
-h2 {
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 50px;
-}
-
-.slider-frame {
-	width: 1280px;
+.section img {
+    max-width: 50%;
     height: auto;
-	margin:50px auto 0;
-	overflow: hidden;
+    display: block;
+    margin: 0 auto;
 }
 
-.slider-frame ul {
-	display: flex;
-	padding: 0;
-	width: 400%;
-	
-	animation: slide 20s infinite alternate ease-in-out;
+
+
+.main-image-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+	margin-left: 400px;
 }
 
-.slider-frame li {
-	width: 100%;
-	list-style: none;
+#mainImage {
+    width: 100%;
+    display: block;
 }
 
-.slider-frame img {
-	width: 100%;
-}
-/*cuerpo*/
-
-.titulo{
-	font-size: 60px;
-	font-weight: 600;
-	text-transform: uppercase;
-	color:#000000;
-	text-align: left;
-	margin-top:45px;
-	padding: 30px;
-	
-}
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px;
-		
-    }
-
-    .texto {
-        flex: 1;
-        padding-right: 20px;
-		text-align: justify;
-		margin-left: 30px;
-    }
-
-    .foto {
-        flex: 1;
-        margin-right: 0px; /* Posiciona la imagen a 10px del lado derecho */
-		
-    }
-
-    img {
-        max-width:100%;
-        height: auto;
-		margin-top:10px;
-    }
-
-
-/*Pie de Pagina*/
-
-.footer {
-	background: #2c3e50; /* Color azul oscuro */
-	color: white;
-	padding: 20px;
-	 /* Fijar el pie de página en la parte inferior */
-	bottom: 0;
-	width: 100%;
-}
-.footer-content {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.left-content p {
-	margin: 5px 0;
-	margin-left: 10px;
-}
-.right-content a {
-	color: white;
-	margin-left: 20px;
-	text-decoration: none;
-}
-.right-content a:hover {
-	text-decoration: underline;
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
 }
 
-.social-icons a i {
-color: white; /* Cambiar el color de los iconos a blanco */
+.left {
+    margin-left: 0px;
 }
 
- .footer-content img {
-            height: 60px; /* Ajustar el tamaño del logo */
-        }
-		
+.right {
+    right: 0;
+}
+
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.thumbnails img {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+}

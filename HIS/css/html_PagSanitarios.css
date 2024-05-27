@@ -1,93 +1,13 @@
 
-/* barra de inicio */
-body {
-	font-family: Arial, sans-serif;
-	margin:0;
-	padding:0;
-	background: url(Fondo.jpeg);
-	height:100vh;
-	background-color: #ecf0f1;
-    }
-	html {
-	overflow-x: hidden; /*"hidden" significa que cualquier contenido que se desborde horizontalmente (es decir, que sea más ancho que el contenedor) será ocultado*/
-}
-.cuadrado-vacio {
-  display: inline-block;
-  padding: 3px; /* Ajusta el tamaño del cuadrado */
-  border: 2px solid white;
-  margin: 6px; /* Espacio alrededor del cuadrado */
-  font-size: 20px; /* Tamaño del texto */
-  line-height: 1; /* Ajusta la altura del cuadrado */
-  color: fff;
-  align-items: center;
-  
-}
-.header{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.imagen{
-	margin-top:15px;
-	width:30px;
-	margin-right:10px;
-}
-.head{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 80px;
-	background: #2c3e50;
-	position:fixed;
-	width: 100%;
-	z-index: 100;
-}
-
-.navegacion{
-	display:flex;
-	margin-right: 10px;
-	align-items: center;
-}
-
-.logo{
-	margin-left:50px;
-	
-}
-.logo a{
-	text-decoration: none;
-	color: #fff;
-	text-transform: uppercase;
-	user-select: none;
-	font-size: 60px;
-	cursor: pointer;
-}
-	
-.navegacion a{
-	display: block;
-	padding: 23px 20px;
-	color: #fff;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 20px;
-	 align-items: center;
-}
-
-.navegacion  a:hover {
-	background: #3f3f3f;
-	
-}
-
-.header{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.header{
-	height: 10vh !important;
+.navegacion a.active {
+    background-color: #E0E0E0; /* Cambia el color de fondo a lo que prefieras */
 }
 
 
+h4{
+	margin-top:10px;
+	margin-bottom:10px;
+}
 /* cajas/cubos */
 .box-container{
 	display: grid;
@@ -143,18 +63,3 @@ body {
 	cursor: pointer;
 }
  
- /*:::::Pie de Pagina*/
-.pie-pagina{
-    width: 100%;
-    background-color: #fff;
-	margin-top: 55px;
-}
-.pie-pagina .grupo-2{
-    background-color: #0a1a2a;
-    padding: 20px 10px;
-    text-align: center;
-    color: #fff;
-}
-.pie-pagina .grupo-2 small{
-    font-size: 15px;
-}

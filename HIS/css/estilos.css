@@ -1,40 +1,52 @@
 /* Se definen los estilos CSS */
 
+
 h1 {
-    color: blue; /* Corrección del color */
+    color: #2c3e50; /* Corrección del color */
 	text-align: center;
 	font-size: 4em;
 	font-weight: bold; /* Grosor del texto */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efecto de sombra */
+	margin-top: 50px;
+	margin-bottom: 10px;
 }
 
 h3 {
 	text-align: center;
+	margin-bottom: 10px;
 }
 
-footer {
-    color: black;
-    margin-left:25px;
-    width: 100%;
-}
 
 .estilo-tabla {
-    border-collapse: collapse;
-	width: 100%; /* Ancho de las celdas */
-    height: 100%; /* Altura de las celdas */
-    border: 1;
+	 
+	width: 60%; 
+	  margin: auto;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	margin-bottom: 50px;
+}
+
+.estilo-tabla thead tr {
+    background-color: #009879;
+    color: #ffffff;
     text-align: center;
 }
 
-h2 {
-    color: black; /* Corrección del color */
-	margin-left:575px;
+.estilo-tabla th,
+.estilo-tabla td {
+    padding: 6px 6px;
+	text-align: center; /* Centra el texto horizontalmente */
+    vertical-align: middle; /* Centra el texto verticalmente */
 }
 
-.estilo2-tabla {
-	border-collapse: collapse;
-	width: 100%; /* Ancho de las celdas */
-    height: 100%; /* Altura de las celdas */
-    border: 1;
-    text-align: center;	
+.estilo-tabla tbody tr:nth-of-type(even) {
+    background-color: #F8F8FF;
+}
+
+
+.estilo-tabla tbody img:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.8);
+    transition: all 0.2s ease-in-out;
 }

@@ -1,0 +1,192 @@
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+	font-size:100%;
+	vertical-align: baseline;
+}
+html {
+	overflow-x: hidden; /*"hidden" significa que cualquier contenido que se desborde horizontalmente (es decir, que sea más ancho que el contenedor) será ocultado*/
+}
+.navegacion a.active {
+    background-color: #E0E0E0; /* Cambia el color de fondo a lo que prefieras */
+}
+body {
+	font-family: Arial, sans-serif;
+	background-color: #ecf0f1;
+
+   }
+   
+/*barra de navegacion*/
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+	font-size:100%;
+	vertical-align: baseline;
+}
+
+body {
+	font-family: Arial, sans-serif;
+
+    }
+.cuadrado-vacio {
+  display: inline-block;
+  padding: 3px; /* Ajusta el tamaño del cuadrado */
+  border: 2px solid white;
+  margin: 6px; /* Espacio alrededor del cuadrado */
+  font-size: 20px; /* Tamaño del texto */
+  line-height: 1; /* Ajusta la altura del cuadrado */
+  color: fff;
+  align-items: center;
+  
+}
+.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.imagen{
+	margin-top:15px;
+	width:30px;
+	margin-right:10px;
+}
+.head{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	background: #2c3e50;
+	position:fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+.navegacion{
+	display:flex;
+	margin-right: 10px;
+	align-items: center;
+}
+
+.logo{
+	margin-left:50px;
+	
+}
+.logo a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	user-select: none;
+	font-size: 60px;
+	cursor: pointer;
+}
+	
+.navegacion a{
+	display: block;
+	padding: 23px 20px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	 align-items: center;
+}
+
+.navegacion  a:hover {
+	background: transparent;
+	
+}
+
+.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header{
+	height: 8vh !important;
+	background: #fff;
+}
+
+.title{
+	margin-top: 100px;
+	margin-bottom: 60px;
+	font-size: 60px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color:#000000;
+	
+}
+
+p{
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #00000;
+	padding: 0 100px;
+	line-height: 1.5;
+	
+}
+
+
+
+/*Pie de Pagina*/
+
+.footer {
+	
+	color: white;
+
+	font-size: 16px;
+}
+.footer-content {
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c3e50; /* Color de fondo del pie de página */
+    color: white; /* Color de texto */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Para que el padding se incluya en el ancho total */
+    display: flex; /* Utiliza el modelo de caja flexible para alinear los elementos */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+.left-content p {
+	margin: 5px 0;
+	margin-left: 10px;
+	font-size: 16px;
+	
+}
+.right-content a {
+	color: white;
+	margin-left: 30px;
+	text-decoration: none;
+}
+.right-content a:hover {
+	text-decoration: underline;
+}
+.social-icons {
+	display: flex;
+	justify-content: center;
+	gap: 10px; /* Espacio entre los iconos */
+	margin-top: 20px; /* Espaciado superior opcional */
+}
+
+.social-icons a {
+	display: inline-flex;
+	width: 40px;
+	height: 40px;
+	background-color: #ccc; /* Cambia esto al color de fondo que prefieras */
+	color: white; /* Cambia esto al color del icono que prefieras */
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.social-icons a i {
+	font-size: 20px; /* Tamaño del icono */
+}
+
+.logo img {
+    height: 40px; /* Ajusta la altura del logo según sea necesario */
+}
+

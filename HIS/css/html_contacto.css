@@ -1,19 +1,4 @@
-*{
-	margin: 0;
-	padding: 0;
-	border:0;
-	font-size:100%;
-	vertical-align: baseline;
-}
-html {
-	overflow-x: hidden; /*"hidden" significa que cualquier contenido que se desborde horizontalmente (es decir, que sea más ancho que el contenedor) será ocultado*/
-}
-
-body {
-	font-family: Arial, sans-serif;
-	background-color: #ecf0f1;
-
-   }
+   
 /*barra de navegacion*/
 *{
 	margin: 0;
@@ -21,6 +6,9 @@ body {
 	border:0;
 	font-size:100%;
 	vertical-align: baseline;
+}
+.navegacion a.active {
+    background-color: #E0E0E0; /* Cambia el color de fondo a lo que prefieras */
 }
 
 body {
@@ -57,13 +45,11 @@ body {
 	
 	width: 100%;
 	z-index: 100;
-	margin-top:0px;
 }
 
 .navegacion{
 	display:flex;
 	margin-right: 10px;
-	margin-top:0px;
 	align-items: center;
 }
 
@@ -106,18 +92,8 @@ body {
 	background: #fff;
 }
 
-.title{
-	margin-top: 100px;
-	margin-bottom: 60px;
-	font-size: 60px;
-	font-weight: 600;
-	text-transform: uppercase;
-	color:#000000;
-	
-}
 
 /*Cuadrado de contactar*/
-
 
 .contact_form{  
   width: 460px; 

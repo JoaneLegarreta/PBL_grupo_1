@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/html_acceso.css" >
+		<link rel="stylesheet" href="css/Comun.css" >
 		<title>EYETECH</title>
 		<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 	</head>
@@ -16,17 +17,17 @@
 			</div>
 			
 			<nav class="navegacion">
-					<a href="inicio.html" class="active">Inicio</a>
+					<a href="inicio.html">Inicio</a>
 					<a href="Servicios.html" >Servicios</a>
 					<a href="Conocenos.html">Conócenos</a>
 					<a href="Contacto.html">Contacto</a>
-					<div class="cuadrado-vacio"><a href="Acceso_Eyetech.html">INICIAR SESIÓN</a></div>
+					<div class="cuadrado-vacio"><a href="Acceso_Eyetech.html"  class="active">INICIAR SESIÓN</a></div>
 				</nav>
 		</div>
 		
 		<div class="formulario">
 			<h1>Inicio de sesión</h1>
-			<form method="post" action="Pag_Sanitarios.html">
+			<form method="post" action="Pag_Sanitarios.html" onsubmit="return validarCredenciales()">
 				<div class="username">
 					<input type="text" name="username" required>
 					<label>Nombre de Usuario</label>
@@ -42,6 +43,23 @@
 				</div>
 			</form>
 		</div>
+
+		<script>
+			function validarCredenciales() {
+				const username = document.querySelector('input[name="username"]').value;
+				const password = document.querySelector('input[name="password"]').value;
+				
+				const usernameValido = "Mondragon";
+				const passwordValida = "Contrasena123";
+				
+				if (username === usernameValido && password === passwordValida) {
+					return true;
+				} else {
+					alert("Nombre de usuario o contraseña incorrectos.");
+					return false;
+				}
+			}
+		</script>
 
 	</body>
 </html>	
