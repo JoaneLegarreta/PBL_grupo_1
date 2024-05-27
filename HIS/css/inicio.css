@@ -21,7 +21,7 @@ img {vertical-align: middle;}
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  top: 8px;
   width: 100%;
   text-align: center;
 }
@@ -69,27 +69,29 @@ img {vertical-align: middle;}
 }
 
 /*Texto sobre la imagen*/
- .texto-sobre-imagen h2{
+.texto-sobre-imagen,
+.texto-sobre-imagen2 {
     position: absolute;
-    top: 10%;
-	left:35%;
-    transform: translate(-50%, -50%);
-    font-size: 50px; /* Ajusta el tamaño del texto según tu necesidad */
-	color:#fff;
-	background: #000000;
-	font-family: 'Courier New', Courier, monospace;
-	text-transform: uppercase;
-  }
-  
-   .texto-sobre-imagen2 h2{
-    position: absolute;
-    top: 50%;
-	left:50%;
-    transform: translate(-50%, -50%);
-    font-size: 50px; /* Ajusta el tamaño del texto según tu necesidad */
-	color:#fff;
-	text-transform: uppercase;
-  }
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box;
+}
+.texto-sobre-imagen h2,
+.texto-sobre-imagen p,
+.texto-sobre-imagen2 h2,
+.texto-sobre-imagen2 p {
+    margin: 0;
+    padding: 0;
+	text-align:center;
+}
+.texto-sobre-imagen h2,
+.texto-sobre-imagen2 h2 {
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+	font-size:20px;
+}
   
   
   /*Boton*/

@@ -50,3 +50,16 @@ h3 {
     transform: scale(1.8);
     transition: all 0.2s ease-in-out;
 }
+
+
+.footer {
+	height:80px;
+    width: 100%;
+    background-color: #2c3e50; /* Color de fondo del pie de página */
+    color: white; /* Color de texto */
+	margin-bottom:0;
+    box-sizing: border-box; /* Para que el padding se incluya en el ancho total */
+   
+	font-size: 8px;
+	text-align:Center;
+}

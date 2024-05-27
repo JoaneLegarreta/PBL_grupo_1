@@ -16,6 +16,8 @@
 	text-align: center;
 	padding: 0 0 20px 0;
 	border-bottom: 1px solid #00000;
+	margin-top:10px;
+
 }
 .formulario form{
 
@@ -160,6 +162,7 @@ button{
 	cursor:pointer;
 	outline:none;
 	padding: 5px 5px;
+	margin-bottom:10px;
 }
 button:hover{
 	border-color: purple;

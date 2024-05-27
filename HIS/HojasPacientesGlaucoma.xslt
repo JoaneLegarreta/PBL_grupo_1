@@ -17,12 +17,12 @@
 			</div>
 			
 			<nav class="navegacion">
-					<a href="inicio.html" class="active"  onclick="return confirmLogout()">Inicio</a>
+					<a href="inicio.html"  onclick="return confirmLogout()">Inicio</a>
 					<a href="Servicios.html"  onclick="return confirmLogout()">Servicios</a>
 					<a href="Conocenos.html"  onclick="return confirmLogout()">Conócenos</a>
 					<a href="Contacto.html"  onclick="return confirmLogout()" >Contacto</a>
 					<div class="cuadrado-vacio">
-						<a href="Acceso_Eyetech.html" onclick="return confirmLogout()">CERRAR SESIÓN</a>
+						<a href="Acceso_Eyetech.html" onclick="return confirmLogout()" class="active">CERRAR SESIÓN</a>
 					</div>
 			</nav>
 			<script>
@@ -74,6 +74,11 @@
 							</tr>
 					</xsl:for-each>
 				</table>
+				
+				<footer class="footer">
+					<p>© 2024 EYETECH</p>
+					<p>Este sitio web es para uso exclusivo de personal autorizado. El acceso no autorizado está prohibido y puede ser objeto de sanciones legales.</p>
+				</footer>
 			</body>
 		</html>
 	</xsl:template>
