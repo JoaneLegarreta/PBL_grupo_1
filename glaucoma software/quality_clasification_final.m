@@ -71,6 +71,14 @@ for i = 1:N
     destino = fullfile(carpeta_destino, nombre_archivo);
     copyfile(ruta_archivo, destino);
 end
+%% 
+I = imload(T.image{i});     
+contraste = stdfilt(I);
+cont(i) = sum(contraste(:));
+SD(i) = std2(I(:));
+
+
+%% 
 
 function I = imload(file_name)
     I = imread(file_name);
