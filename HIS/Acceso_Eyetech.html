@@ -21,6 +21,7 @@
 					<a href="Servicios.html" >Servicios</a>
 					<a href="Conocenos.html">Conócenos</a>
 					<a href="Contacto.html">Contacto</a>
+					<a href="FAQ.html">FAQ</a>
 					<div class="cuadrado-vacio"><a href="Acceso_Eyetech.html"  class="active">INICIAR SESIÓN</a></div>
 				</nav>
 		</div>
@@ -36,6 +37,14 @@
 					<input type="password" name="password" required>
 					<label>Contraseña</label>
 				</div>
+				<div class="centro">
+					<input type="text" name="centro" required>
+					<label>Centro</label>
+				</div>
+				<div class="id">
+					<input type="text" name="id" required>
+					<label>ID</label>
+				</div>
 				<div class="recordar">¿Olvidó su contraseña?</div>
 				<button type="submit">Iniciar</button>
 				<div class="registrarse">
@@ -50,7 +59,7 @@
 				const password = document.querySelector('input[name="password"]').value;
 				
 				const usernameValido = "Mondragon";
-				const passwordValida = "Contrasena123";
+				const passwordValida = "0000";
 				
 				if (username === usernameValido && password === passwordValida) {
 					return true;

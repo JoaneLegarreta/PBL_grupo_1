@@ -20,6 +20,8 @@
 	padding: 0 0 20px 0;
 	border-bottom: 1px solid #00000;
 	margin-top:10px;
+	color: #50b3a2;
+	font-size:30px;
 }
 .formulario form{
 
@@ -32,6 +34,16 @@ form .username{
 	margin: 30px 0;
 }
 form .contrasena{
+	position: relative;
+	border-bottom:  2px solid lightgray;
+	margin: 30px 0;
+}
+form .centro{
+	position: relative;
+	border-bottom:  2px solid lightgray;
+	margin: 30px 0;
+}
+form .id{
 	position: relative;
 	border-bottom:  2px solid lightgray;
 	margin: 30px 0;
@@ -54,9 +66,32 @@ form .contrasena{
 	border: none;
 	background:none;
 	outline:none;
-}/* Estilos iniciales */
+}
+.centro input{
+	width: 100%;
+	padding: 0 5px;
+	height:40px;
+	font-size: 16px;
+	border: none;
+	background:none;
+	outline:none;
+}
+.id input{
+	width: 100%;
+	padding: 0 5px;
+	height:40px;
+	font-size: 16px;
+	border: none;
+	background:none;
+	outline:none;
+}
+
+
+/* Estilos iniciales */
 .username label,
-.contrasena label {
+.contrasena label,
+.centro label,
+.id label {
     position: absolute;
     top: 40px;
     left: 0;
@@ -66,17 +101,23 @@ form .contrasena{
 }
 
 /* Estilos cuando el input está enfocado o tiene contenido */
+.centro input:focus ~ label,
+.centro input:valid ~ label,
+.id input:focus ~ label,
+.id input:valid ~ label,
 .username input:focus ~ label,
 .username input:valid ~ label,
 .contrasena input:focus ~ label,
 .contrasena input:valid ~ label {
     top: -5px;
-    color: #6C3483;
+    color: #50b3a2;
 }
 
 /* Estilos para la línea debajo del input */
 .username span::before,
-.contrasena span::before {
+.contrasena span::before,
+.centro span::before,
+.id span::before {
     position: absolute;
     top: 40px;
     left: 0;
@@ -89,7 +130,11 @@ form .contrasena{
 .username input:focus ~ span::before,
 .username input:valid ~ span::before,
 .contrasena input:focus ~ span::before,
-.contrasena input:valid ~ span::before {
+.contrasena input:valid ~ span::before,
+.centro input:focus ~ span::before,
+.centro input:valid ~ span::before,
+.id input:focus ~ span::before,
+.id input:valid ~ span::before {
     width: 100%;  /* Cambiado a 100% cuando el input está enfocado o tiene contenido */
 }
 
@@ -106,7 +151,7 @@ button{
 	width:100%;
 	height:50px;
 	border:1px solid;
-	background:#9c27b0;
+	background:#50b3a2;
 	border-radius: 25px;
 	font-size:18px;
 	color:#fff;

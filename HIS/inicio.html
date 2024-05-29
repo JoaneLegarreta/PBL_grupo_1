@@ -22,6 +22,7 @@
 					<a href="Servicios.html" >Servicios</a>
 					<a href="Conocenos.html">Conócenos</a>
 					<a href="Contacto.html">Contacto</a>
+					<a href="FAQ.html">FAQ</a>
 					<div class="cuadrado-vacio"><a href="Acceso_Eyetech.html">INICIAR SESIÓN</a></div>
 				</nav>
 				
@@ -119,8 +120,8 @@
 						let i;
 						let slides = document.getElementsByClassName("mySlides");
 						let dots = document.getElementsByClassName("dot");
-						if (n >= slides.length) {slideIndex = 0}
-						if (n < 0) {slideIndex = slides.length - 1}
+						if (n >= slides.length) { slideIndex = 0 }
+						if (n < 0) { slideIndex = slides.length - 1 }
 						for (i = 0; i < slides.length; i++) {
 							slides[i].style.display = "none";
 						}
@@ -128,11 +129,13 @@
 							dots[i].className = dots[i].className.replace(" active", "");
 						}
 						slides[slideIndex].style.display = "block";
-						dots[slideIndex].className += " active";
-						timer = setTimeout(() => plusSlides(1), 3000); // Cambia imagen cada 4 segundos
+						if (dots.length > 0) {
+							dots[slideIndex].className += " active";
+						}
+						timer = setTimeout(() => plusSlides(1), 3000); // Cambia imagen cada 3 segundos
 					}
 
-					// Inicia el carrusel
+					// Muestra la primera diapositiva inmediatamente
 					showSlides(slideIndex);
 				</script>
 			
@@ -179,7 +182,7 @@
 				</div>
 			</div>
 		</section>
-			
+		
 				
 		<section class= "content contact" id ="content contact">
 			<h2 class="title"> Contacto </h2>
@@ -221,3 +224,18 @@
 	
 	</body>
 </html>	
+
+
+<!--
+function showSlides(n) { ... }: Define una función llamada showSlides que toma un parámetro n.
+let i;: Inicia variable i.
+let slides = document.getElementsByClassName("mySlides");: Obtiene todos los elementos con la clase mySlides y los almacena en la variable slides.
+let dots = document.getElementsByClassName("dot");: Obtiene todos los elementos con la clase dot y los almacena en la variable dots.
+if (n >= slides.length) { slideIndex = 0 }: Si n es mayor o igual al número de diapositivas, reinicia slideIndex a 0 (esto permite el bucle de diapositivas).
+if (n < 0) { slideIndex = slides.length - 1 }: Si n es menor que 0, establece slideIndex al índice de la última diapositiva.
+for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }: Oculta todas las diapositivas.
+for (i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" active", ""); }: Elimina la clase active de todos los puntos de navegación.
+slides[slideIndex].style.display = "block";: Muestra la diapositiva actual.
+if (dots.length > 0) { dots[slideIndex].className += " active"; }: Si hay puntos de navegación, añade la clase active al punto correspondiente a la diapositiva actual.
+timer = setTimeout(() => plusSlides(1), 3000);: Establece un temporizador para cambiar a la siguiente diapositiva después de 3 segundos.
+-->
