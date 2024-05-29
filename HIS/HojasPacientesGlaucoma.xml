@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="HojasPacientesGlaucoma.xslt"?>
 
+
 <!--<!DOCTYPE Detector_Glaucoma []>--> <!-- For the internal DTD -->
 
 <Detector_Glaucoma  xsi:noNamespaceSchemaLocation="HojasPacientesGlaucoma.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -18,7 +19,7 @@
 		<Resultados>
 			<Calidad_Imagen>Imagen No Revisada</Calidad_Imagen>
 			<Glaucoma>No</Glaucoma>
-			<imagen ruta=""/>
+			<imagen ruta="Imagenes/imagenBC_G3.jpg"/>
 		</Resultados>
 	</Paciente>
 	<Paciente id= "2129Z">
@@ -33,7 +34,7 @@
 		<Resultados>
 			<Calidad_Imagen>Bajo Contraste</Calidad_Imagen>
 			<Glaucoma>Si</Glaucoma>
-			<imagen ruta="C:\Users\Usuario\Desktop\3. maila\Segundo Cuatri\PBL6\HIS\Imagenes/imagenBC_G.jpg"/>
+			<imagen ruta="Imagenes/imagenBC_G.jpg"/>
 		</Resultados>
 	</Paciente>
 	<Paciente id= "5412F">
@@ -48,7 +49,7 @@
 		<Resultados>
 			<Calidad_Imagen>Ruido</Calidad_Imagen>
 			<Glaucoma>No</Glaucoma>
-			<imagen ruta=""/>
+			<imagen ruta="Imagenes/imagenNG7.jpg"/>
 		</Resultados>
 	</Paciente>
 	<Paciente id= "1563S">
@@ -63,7 +64,7 @@
 		<Resultados>
 			<Calidad_Imagen>Calidad Correcta</Calidad_Imagen>
 			<Glaucoma>Si</Glaucoma>
-			<imagen ruta="C:\Users\Usuario\Desktop\3. maila\Segundo Cuatri\PBL6\HIS\Imagenes/image_0077.jpg"/>
+			<imagen ruta="Imagenes/image_0077.jpg"/>
 		</Resultados>
 	</Paciente>
 	<Paciente id= "8452R">
@@ -76,9 +77,9 @@
 		<Centro>Alto Deba</Centro>
 		<Fecha>2024-04-29</Fecha>
 		<Resultados>
-			<Calidad_Imagen>Desenfoque</Calidad_Imagen>
+			<Calidad_Imagen>Calidad Correcta</Calidad_Imagen>
 			<Glaucoma>No</Glaucoma>
-			<imagen ruta=""/>
+			<imagen ruta="Imagenes/imagenNG5.jpg"/>
 		</Resultados>
 	</Paciente>
 	<Paciente id= "7418H">
@@ -93,7 +94,7 @@
 		<Resultados>
 			<Calidad_Imagen>Ruido</Calidad_Imagen>
 			<Glaucoma>No</Glaucoma>
-			<imagen ruta=""/>
+			<imagen ruta="Imagenes/imagenNG2.jpg"/>
 		</Resultados>
 	</Paciente>
 	<Paciente id= "5296F">
@@ -108,7 +109,7 @@
 		<Resultados>
 			<Calidad_Imagen>Bajo Contraste</Calidad_Imagen>
 			<Glaucoma>Si</Glaucoma>
-			<imagen ruta="C:\Users\Usuario\Desktop\3. maila\Segundo Cuatri\PBL6\HIS\Imagenes/imagenBC_G2.jpg"/>
+			<imagen ruta="Imagenes/imagenBC_G2.jpg"/>
 		</Resultados>
 	</Paciente>
 	<Paciente id= "1596C">
@@ -123,7 +124,7 @@
 		<Resultados>
 			<Calidad_Imagen>Calidad Correcta</Calidad_Imagen>
 			<Glaucoma>Si</Glaucoma>
-			<imagen ruta="C:\Users\Usuario\Desktop\3. maila\Segundo Cuatri\PBL6\HIS\Imagenes/imagenCC_G.jpg"/>
+			<imagen ruta="Imagenes/imagenCC_G.jpg"/>
 		</Resultados>
 	</Paciente>
 	<Paciente id= "4129E">
@@ -138,7 +139,7 @@
 		<Resultados>
 			<Calidad_Imagen>Calidad Correcta</Calidad_Imagen>
 			<Glaucoma>No</Glaucoma>
-			<imagen ruta=""/>
+			<imagen ruta="Imagenes/imagenNG3.jpg"/>
 		</Resultados>
 	</Paciente>
 	<Paciente id= "4271X">
@@ -153,7 +154,7 @@
 		<Resultados>
 			<Calidad_Imagen>Desenfoque</Calidad_Imagen>
 			<Glaucoma>Si</Glaucoma>	
-			<imagen ruta="C:\Users\Usuario\Desktop\3. maila\Segundo Cuatri\PBL6\HIS\Imagenes/imagenD_G.jpg"/>
+			<imagen ruta="Imagenes/imagenD_G.jpg"/>
 		</Resultados>
 	</Paciente>
 	<Paciente id= "7894J">
@@ -168,7 +169,7 @@
 		<Resultados>
 			<Calidad_Imagen>Ruido</Calidad_Imagen>
 			<Glaucoma>No</Glaucoma>
-			<imagen ruta=""/>
+			<imagen ruta="Imagenes/imagenNG4.jpg"/>
 		</Resultados>
 	</Paciente>
 	<Paciente id= "5678D">
@@ -183,7 +184,7 @@
 		<Resultados>
 			<Calidad_Imagen>Imagen No Revisada</Calidad_Imagen>
 			<Glaucoma>No</Glaucoma>
-			<imagen ruta=""/>
+			<imagen ruta="Imagenes/imagenNG6.jpg"/>
 		</Resultados>
 	</Paciente>
 </Detector_Glaucoma>

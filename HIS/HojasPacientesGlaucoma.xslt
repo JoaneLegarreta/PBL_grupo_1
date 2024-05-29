@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
 	<xsl:template match="/">
 		<html>
 			<head>
 				<title>Eyetech Glaucoma Resultados</title>
 				<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+				<link rel="stylesheet" type="text/css" href="css/Comun.css"/>
 			</head>
 			
 			<body>
-				<img src="Logo.png" alt="Logo de la empresa" style="float:right; width:200px"/>
-				<img src="Logo2.png" alt="Logo de la empresa" style="margin-left:25px; width:100px; margin-top:25px"/>
+				<div class= "head">
+			
+				<div class= "logo">
+				<a href="inicio.html" onclick="return confirmLogout()">EYETECH<img src="Logo.png" alt="Logo de la empresa" style="float:left; width:70px" /></a>
+			</div>
+			
+			<nav class="navegacion">
+					<a href="inicio.html"  onclick="return confirmLogout()">Inicio</a>
+					<a href="Servicios.html"  onclick="return confirmLogout()">Servicios</a>
+					<a href="Conocenos.html"  onclick="return confirmLogout()">Conócenos</a>
+					<a href="Contacto.html"  onclick="return confirmLogout()" >Contacto</a>
+					<div class="cuadrado-vacio">
+						<a href="Acceso_Eyetech.html" onclick="return confirmLogout()" class="active">CERRAR SESIÓN</a>
+					</div>
+			</nav>
+			<script>
+				function confirmLogout() {
+					return confirm("¿Seguro que quieres cerrar la sesión?");
+				}
+			</script>
+				
+			</div>
+			<header class= "content header">
+			<h1></h1>
+			<p></p>
+			</header>
+				
 				<h1>DATOS CLÍNICOS</h1>
 				<h3>RESULTADOS DE LAS PRUEBAS REALIZADAS A PACIENTES CON SOSPECHA DE GLAUCOMA</h3>
-				<footer><p>A continuación se presentan los resultados de los exámenes de glaucoma realizados el mes anterior. Las imágenes afectadas por ruido han sido sometidas a un proceso de filtrado para asegurar un resultado óptimo. Los pacientes diagnosticados con glaucoma se resaltarán en color rojo para su identificación visual. Al final se mostrarán los pacientes con glaucoma con sus respectivas imagenes.</p></footer>
+				<footer><p>A continuación se presentan los resultados de los exámenes de glaucoma realizados el mes anterior. Las imágenes afectadas por ruido han sido sometidas a un proceso de filtrado para asegurar un resultado óptimo. Los pacientes diagnosticados con glaucoma se resaltarán en color rojo para su identificación visual. Además, se mostrará una imagen completa del ojo del paciente.</p></footer>
 				<table class="estilo-tabla">
-					<tr bgcolor ="#ADD8E6">
-						<th>Paciente ID</th>
-						<th>Edad</th>
-						<th>Peso</th>
-						<th>Altura</th>
-						<th>Centro</th>
-						<th>Fecha</th>
-						<th>Glaucoma</th>
-						<!--<th>Imagen</th>-->
-					</tr>
-					<xsl:for-each select="Detector_Glaucoma/Paciente">
-						<xsl:sort select="Fecha"/>
-						<tr>
-							<td><xsl:value-of select="@id"/></td>
-							<!-- <td><xsl:value-of select="Nombre"/></td> -->
-							<td><xsl:value-of select="Edad"/></td>
-							<td><xsl:value-of select="Peso"/></td>
-							<td><xsl:value-of select="Altura"/></td>
-							<td><xsl:value-of select="Centro"/></td>
-							<td><xsl:value-of select="Fecha"/></td>	
-							<!--<td><xsl:value-of select="Resultados/Calidad_Imagen"/></td>-->
-							<!--<td><xsl:value-of select="Resultados/Glaucoma"/></td> -->
-							<xsl:choose>
-								<xsl:when test="Resultados/Glaucoma = 'Si'">
-									<td><FONT color="#F81714"><xsl:value-of select="Resultados/Glaucoma"/>*</FONT></td>
-								</xsl:when>
-								<xsl:otherwise>
-									<td><xsl:value-of select="Resultados/Glaucoma"/></td>
-								</xsl:otherwise>
-							</xsl:choose>
-						</tr>
-					</xsl:for-each>
-				</table>
-				<h2>Pacientes con glaucoma</h2>
-				<table class="estilo2-tabla">
 					<tr bgcolor= "#ADD8E6">
 						<th>Paciente ID</th>
 						<th>Centro</th>
 						<th>Fecha</th>
-						<th>Calidad de Imagen</th>
+						<th>Glaucoma</th>
 						<th>Imagen</th>
 					</tr>
-					<xsl:for-each select="Detector_Glaucoma/Paciente[Resultados/Glaucoma = 'Si']">
+					<xsl:for-each select="Detector_Glaucoma/Paciente">
 						<xsl:sort select="Fecha"/>
 							<tr>
 								<td><xsl:value-of select="@id"/></td>
 								<td><xsl:value-of select="Centro"/></td>
 								<td><xsl:value-of select="Fecha"/></td>	
-								<td><xsl:value-of select="Resultados/Calidad_Imagen"/></td>								
+																
+								<xsl:choose>
+									<xsl:when test="Resultados/Glaucoma = 'Si'">
+										<td><FONT color="#F81714"><xsl:value-of select="Resultados/Glaucoma"/>*</FONT></td>
+									</xsl:when>
+									<xsl:otherwise>
+										<td><xsl:value-of select="Resultados/Glaucoma"/></td>
+									</xsl:otherwise>
+								</xsl:choose>
 								<td>
 									<xsl:element name="img">
 										<xsl:attribute name="src">
@@ -74,6 +74,11 @@
 							</tr>
 					</xsl:for-each>
 				</table>
+				
+				<footer class="footer">
+					<p>© 2024 EYETECH</p>
+					<p>Este sitio web es para uso exclusivo de personal autorizado. El acceso no autorizado está prohibido y puede ser objeto de sanciones legales.</p>
+				</footer>
 			</body>
 		</html>
 	</xsl:template>
