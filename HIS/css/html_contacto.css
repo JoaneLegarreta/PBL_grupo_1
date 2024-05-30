@@ -13,6 +13,7 @@
 
 body {
 	font-family: Arial, sans-serif;
+	background-color: #f2f2f2
 
     }
 .cuadrado-vacio {
@@ -114,7 +115,7 @@ input{
   border-radius: 5px;  
   border-style: solid; 
   border-width: 1px; 
-  border-color: #ab4493; 
+  border-color: #50b3a2; 
   margin-top: 10px;  
   padding-left: 10px;
   margin-bottom: 20px; 
@@ -128,7 +129,7 @@ textarea{
   border-radius: 5px;  
   border-style: solid; 
   border-width: 1px; 
-  border-color: #ab4493; 
+  border-color: #50b3a2; 
   margin-top: 10px;  
   padding-left: 10px;
   margin-bottom: 20px; 
@@ -149,7 +150,7 @@ button{
   margin-bottom: 20px; 
   margin-top: 10px;   
   text-transform: uppercase;
-  background-color: #ab4493; 
+  background-color: #50b3a2; 
   border-color: #ab4493; 
   border-style: solid; 
   border-radius: 10px;  
@@ -175,10 +176,10 @@ span{
 
 
 h1{
-  font-size: 40px;  
-  text-align: letf; 
+  font-size: 30px;  
+  text-align: center; 
   padding-bottom: 20px; 
-  color: #ab4493;
+  color: #50b3a2;
 }
 
 

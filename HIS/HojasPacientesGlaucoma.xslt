@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
 	<xsl:template match="/">
 		<html>
 			<head>
@@ -12,30 +11,31 @@
 			<body>
 				<div class= "head">
 			
-				<div class= "logo">
-				<a href="inicio.html" onclick="return confirmLogout()">EYETECH<img src="Logo.png" alt="Logo de la empresa" style="float:left; width:70px" /></a>
-			</div>
-			
-			<nav class="navegacion">
-					<a href="inicio.html"  onclick="return confirmLogout()">Inicio</a>
-					<a href="Servicios.html"  onclick="return confirmLogout()">Servicios</a>
-					<a href="Conocenos.html"  onclick="return confirmLogout()">Conócenos</a>
-					<a href="Contacto.html"  onclick="return confirmLogout()" >Contacto</a>
-					<div class="cuadrado-vacio">
-						<a href="Acceso_Eyetech.html" onclick="return confirmLogout()" class="active">CERRAR SESIÓN</a>
+					<div class= "logo">
+						<a href="inicio.html" onclick="return confirmLogout()">EYETECH<img src="Logo.png" alt="Logo de la empresa" style="float:left; width:70px"/></a>
 					</div>
-			</nav>
-			<script>
-				function confirmLogout() {
-					return confirm("¿Seguro que quieres cerrar la sesión?");
-				}
-			</script>
+					
+					<nav class="navegacion">
+							<a href="inicio.html"  onclick="return confirmLogout()">Inicio</a>
+							<a href="Servicios.html"  onclick="return confirmLogout()">Servicios</a>
+							<a href="Conocenos.html"  onclick="return confirmLogout()">Conócenos</a>
+							<a href="Contacto.html"  onclick="return confirmLogout()" >Contacto</a>
+							<div class="cuadrado-vacio">
+								<a href="Acceso_Eyetech.html" onclick="return confirmLogout()" class="active">CERRAR SESIÓN</a>
+							</div>
+					</nav>
+					<script>
+						function confirmLogout() {
+							return confirm("¿Seguro que quieres cerrar la sesión?");
+						}
+					</script>
+					
+				</div>
 				
-			</div>
-			<header class= "content header">
-			<h1></h1>
-			<p></p>
-			</header>
+				<header class= "content header">
+				<h1></h1>
+				<p></p>
+				</header>
 				
 				<h1>DATOS CLÍNICOS</h1>
 				<h3>RESULTADOS DE LAS PRUEBAS REALIZADAS A PACIENTES CON SOSPECHA DE GLAUCOMA</h3>
