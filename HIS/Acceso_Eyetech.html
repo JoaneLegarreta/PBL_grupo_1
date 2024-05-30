@@ -13,7 +13,7 @@
 		<div class= "head">
 		
 			<div class= "logo">
-				<a href="inicio.html">EYETECH<img src="Logo.png" alt="Logo de la empresa" style="float:left; width:70px" class= "imagen"/></a>
+				<a href="inicio.html">EYETECH<img src="Logo.png" alt="Logo de la empresa" class= "logoempresa"/></a>
 			</div>
 			
 			<nav class="navegacion">
@@ -34,13 +34,37 @@
 					<label>Nombre de Usuario</label>
 				</div>
 				<div class="contrasena">
-					<input type="password" name="password" required>
+					<input type="password" name="password" id="password" required>
 					<label>Contraseña</label>
+					<button type="button" id="togglePassword">
+						<span id="eye-icon">👁️</span>
+					</button>
 				</div>
-				<div class="centro">
-					<input type="text" name="centro" required>
-					<label>Centro</label>
-				</div>
+				<script>
+					document.getElementById('togglePassword').addEventListener('click', function() {
+						const passwordField = document.getElementById('password');
+						const eyeIcon = document.getElementById('eye-icon');
+
+						if (passwordField.type === 'password') {
+							passwordField.type = 'text';
+							eyeIcon.textContent = '👁️';
+							setTimeout(() => {
+								passwordField.type = 'password';
+								eyeIcon.textContent = '👁️';
+							}, 3000); // 3000 milisegundos = 3 segundos
+						} else {
+							passwordField.type = 'password';
+							eyeIcon.textContent = '👁️';
+						}
+					});
+				</script>
+				<select id="centro" type="text" name="centro" class="centro" required>
+					<option value="" disabled selected>Seleccione un centro</option>
+					<option value="Txagorritxu">Txagorritxu</option>
+					<option value="Alto Deba">Alto Deba</option>
+					<option value="Hospital Universitario Donostia">Hospital Universitario Donostia</option>
+					<option value="Cruces">Cruces</option>
+				</select>
 				<div class="id">
 					<input type="text" name="id" required>
 					<label>ID</label>
