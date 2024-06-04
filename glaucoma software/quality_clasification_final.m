@@ -19,7 +19,7 @@ for i = 1:length(T.image)
     I = imload(T.image{i});     
     contraste = stdfilt(I);
     cont(i) = sum(contraste(:));
-    SD(i) = std2(I(:));
+    SD(i) = std2(I);
 
     if SD(i) < 0.1
         quality(i) = 1;
