@@ -61,7 +61,13 @@
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>
-							<xs:element name= "Centro" type ="xs:string"/>
+							<xs:element name= "Centro">
+								<xs:simpleType>
+									<xs:restriction base ="xs:string">
+										<xs:pattern value = "Txagorritxu|Hospital Universitario Donostia|Cruces|Alto Deba"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
 							<xs:element name= "Fecha">
 								<xs:simpleType>
 									<xs:restriction base="xs:date">

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/FAQ.css" >
+		<link rel="stylesheet" href="css/Comun.css" >
+		
+		<title>EYETECH</title>
+		<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+	</head>
+			
+	<body>
+		<div class= "head">
+		
+			<div class= "logo">
+				<a href="inicio.html">EYETECH<img src="Logo.png" alt="Logo de la empresa"  class= "logoempresa"/></a>
+			</div>
+			
+			<nav class="navegacion">
+					<a href="inicio.html">Inicio</a>
+					<a href="Servicios.html" >Servicios</a>
+					<a href="Conocenos.html">Conócenos</a>
+					<a href="Contacto.html" >Contacto</a>
+					<a href="FAQ.html"  class="active">FAQ</a>
+					<div class="cuadrado-vacio"><a href="Acceso_Eyetech.html">INICIAR SESIÓN</a></div>
+				</nav>
+		</div>
+		
+		 <div class="preguntas_caja">
+        <div class="titulo">Preguntas Frecuentes sobre Glaucoma</div>
+
+        <div class="faq">
+            <div class="pregunta">¿Qué es el glaucoma?</div>
+            <div class="respuesta">
+                El glaucoma es una enfermedad ocular que puede causar daño al nervio óptico, a menudo debido a un aumento en la presión intraocular, lo que puede llevar a la pérdida de visión y ceguera.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="pregunta">¿Cómo puede el software ayudar en el diagnóstico del glaucoma?</div>
+            <div class="respuesta">
+                El software puede ayudar en el diagnóstico del glaucoma mediante el análisis de imágenes oculares, lo que facilita una detección más temprana y precisa.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="pregunta">¿Qué tipo de software se utiliza para tratar el glaucoma?</div>
+            <div class="respuesta">
+                El software utilizado es para el diagnóstico del glaucoma. Una vez diagnosticado que el paciente padece de glaucoma se le determinará un tratamiento específico.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="pregunta">¿Cuáles son los tratamientos más comunes para el glaucoma?</div>
+            <div class="respuesta">
+                Los tratamientos más comunes para el glaucoma incluyen medicamentos en forma de gotas oculares, terapias con láser y diversas técnicas quirúrgicas para reducir la presión intraocular.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="pregunta">¿Cuál es el precio mínimo del tratamiento?</div>
+            <div class="respuesta">
+                Para información detallada sobre el coste de los tratamientos contáctanos.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="pregunta">¿Existen más centros de Eyetech?</div>
+            <div class="respuesta">
+                Actualmente solo existe una empresa Eyetech situada en Bilbao. Su ubicación exacta podrá encontrarla en la página de inicio, además de en el pie de página.
+            </div>
+        </div>
+		
+		<div class="faq">
+            <div class="pregunta">¿Existen más centros de Eyetech?</div>
+            <div class="respuesta">
+                Actualmente solo existe una empresa Eyetech situada en Bilbao. Su ubicación exacta podrá encontrarla en la página de inicio, además de en el pie de página.
+            </div>
+        </div>
+		
+		<div class="faq">
+            <div class="pregunta">¿Hay más de un tipo de glaucoma?</div>
+            <div class="respuesta">
+              <br> Sí. Desde el punto de vista clínico, destacan dos tipos:  </br> 
+			  <br> 1. Glaucoma crónico (o de ángulo abierto). El paciente comienza a perder progresivamente la visión sin haber tenido ningún síntoma previo. Es el más frecuente y la persona se da cuenta una vez ha comenzado a perder visión. </br> 
+			  <br> 2. Glaucoma agudo (o de ángulo cerrado). No es tan usual, pero es más severo. Este puede llegar a causar una ceguera súbita. Esto es, pérdida de visión en un corto lapso de tiempo. Suele presentar los siguientes síntomas: ojo rojo, dolor, pérdida de visión, náuseas y vómitos.</br> 
+			</div>
+        </div>
+		
+		<div class="faq">
+            <div class="pregunta">¿Cuánto dura la operación de glaucoma?</div>
+            <div class="respuesta">
+                Se hace en un hospital y suele tardar de una a dos horas. En esta operación, el cirujano implanta un tubo diminuto o conducto de drenaje (llamado “shunt” en inglés), en la parte blanca del ojo. El tubo ayuda a drenar el exceso de líquido del ojo, lo que reduce la presión ocular..
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.pregunta').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('open');
+            });
+        });
+    </script>
+		
+		
+		<div class="footer">
+			<div class="footer-content">
+				 <div class="logo">
+					<img src="Logo.png" alt="Logo de la empresa">
+				</div>
+				<div class="left-content">
+					<p>© 2024 EYETECH</p>
+					<p> Maestro García Rivero ,2 - Bilbao</p>
+					<p>Tel.: +34 632 254 112</p>
+					<p>Correo electrónico: eyetech@gmail.com</p>
+									
+				</div>
+				<div class="right-content">
+					<a href="#">POLÍTICA DE PRIVACIDAD</a>
+					<a href="#">POLÍTICA DE COOKIES</a>
+					<a href="#">AVISO LEGAL</a>
+				
+				
+					<div class="social-icons">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<!-- Agregar más iconos según sea necesario -->
+					</div>
+				</div>
+			</div>
+		</div>
+		</body>
+</html>
+
+
+
