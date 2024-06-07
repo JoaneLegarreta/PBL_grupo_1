@@ -29,7 +29,6 @@
 							return confirm("¿Seguro que quieres cerrar la sesión?");
 						}
 					</script>
-					
 				</div>
 				
 				<header class= "content header">

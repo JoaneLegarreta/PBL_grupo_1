@@ -5,6 +5,7 @@
 	font-size:100%;
 	vertical-align: baseline;
 }
+
 html {
 	overflow-x: hidden; /*"hidden" significa que cualquier contenido que se desborde horizontalmente (es decir, que sea más ancho que el contenedor) será ocultado*/
 }

@@ -26,11 +26,15 @@
 .noticia h2 {
     margin-top: 0;
     font-size: 24px;
+	
 }
 
 .noticia p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 	 line-height: 1.5;
+	 font-size: 18px;
+	 margin-left:0px;
+	 justify-content: center;
 }
 
 .noticia img {
@@ -40,6 +44,9 @@
 
 .contenido {
     display: none; /* Ocultar el contenido por defecto */
+	margin-top:10px;
+	padding-left:0px;
+	padding-right:0px;
 }
 
 .mostrar {
