@@ -104,6 +104,64 @@
             });
         });
     </script>
+	
+		<!--Opiniones-->
+		<div class="preguntas_caja2">
+			<h2  class="titulo">Opiniones y Reseñas</h2>
+			<div class="reviews-row">
+				<div class="review">
+					<img src="Imagenes/anonimo.jpg" alt="Foto de usuario" class="review-photo">
+					<div class="review-content">
+						<div class="review-stars">★★★★☆</div>
+						<p class="review-comment">¡Excelente producto, sitio y gente! Los trabajadores muy amables.</p>
+					</div>
+				</div>
+				<div class="review">
+					<img src="Imagenes/cara6.jpg" alt="Foto de usuario" class="review-photo">
+					<div class="review-content">
+						<div class="review-stars">★★★★★</div>
+						<p class="review-comment">Muy buen servicio. Gracias a sus servicios pude salvar mi vista.</p>
+					</div>
+				</div>
+				<div class="review">
+					<img src="Imagenes/cara1.jpg" alt="Foto de usuario" class="review-photo">
+					<div class="review-content">
+						<div class="review-stars">★★★☆☆</div>
+						<p class="review-comment">El producto está bien, pero esperaba algo más rápido.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Para enviar tu comentario-->
+		 <div class="submit-review">
+            <h3>Deja tu comentario</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="photo">Foto:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="stars">Calificación:</label>
+                    <select id="stars" name="stars" required>
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
 		
 		
 		<div class="footer">
