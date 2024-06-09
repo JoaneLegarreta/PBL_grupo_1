@@ -12,11 +12,11 @@
 				<div class= "head">
 			
 					<div class= "logo">
-						<a href="inicio.html" onclick="return confirmLogout()">EYETECH<img src="Logo.png" alt="Logo de la empresa" style="float:left; width:70px"/></a>
+						<a href="index.html" onclick="return confirmLogout()">EYETECH<img src="Logo.png" alt="Logo de la empresa" style="float:left; width:70px"/></a>
 					</div>
 					
 					<nav class="navegacion">
-							<a href="inicio.html"  onclick="return confirmLogout()">Inicio</a>
+							<a href="index.html"  onclick="return confirmLogout()">Inicio</a>
 							<a href="Servicios.html"  onclick="return confirmLogout()">Servicios</a>
 							<a href="Conocenos.html"  onclick="return confirmLogout()">Conócenos</a>
 							<a href="Contacto.html"  onclick="return confirmLogout()" >Contacto</a>
