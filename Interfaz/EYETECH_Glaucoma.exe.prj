@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\asier\Desktop\mondra\3\3.2\PBL VI\Image database\PBL_grupo_1\Interfaz\EYETECH_Glaucoma.exe.prj" location="C:\Users\asier\Desktop\mondra\3\3.2\PBL VI\Image database\PBL_grupo_1\Interfaz" name="EYETECH_Glaucoma.exe" preferred-package-location="C:\Users\asier\Desktop\mondra\3\3.2\PBL VI\Image database\PBL_grupo_1\Interfaz\EYETECH_Glaucoma.exe\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration file="C:\Users\asier\Desktop\mondra\3\3.2\PBL VI\Image database\PBL_grupo_1\Interfaz\EYETECH_Glaucoma.exe.prj" location="C:\Users\asier\Desktop\mondra\3\3.2\PBL VI\Image database\PBL_grupo_1\Interfaz" name="EYETECH_Glaucoma.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>EYETECH_Glaucoma</param.appname>
     <param.icon />
     <param.icons />
@@ -9,7 +9,7 @@
     <param.company>EYETECH®</param.company>
     <param.summary>EYETECH® Glaucoma Diagnosis Intelligent Software</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\asier\Desktop\Imagen de WhatsApp 2024-06-10 a las 21.57.08_bb514301.jpg</param.screenshot>
+    <param.screenshot>C:\Users\asier\Desktop\Imagen de WhatsApp 2024-06-10 a las 21.57.08_97d8e6c0.jpg</param.screenshot>
     <param.guid />
     <param.installpath.string>\EYETECH®\EYETECH_Glaucoma\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
