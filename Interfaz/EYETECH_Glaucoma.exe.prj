@@ -1,0 +1,174 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="C:\Users\asier\Desktop\mondra\3\3.2\PBL VI\Image database\PBL_grupo_1\Interfaz\EYETECH_Glaucoma.exe.prj" location="C:\Users\asier\Desktop\mondra\3\3.2\PBL VI\Image database\PBL_grupo_1\Interfaz" name="EYETECH_Glaucoma.exe" preferred-package-location="C:\Users\asier\Desktop\mondra\3\3.2\PBL VI\Image database\PBL_grupo_1\Interfaz\EYETECH_Glaucoma.exe\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>EYETECH_Glaucoma</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Grupo 1</param.authnamewatermark>
+    <param.email />
+    <param.company>EYETECH®</param.company>
+    <param.summary>EYETECH® Glaucoma Diagnosis Intelligent Software</param.summary>
+    <param.description />
+    <param.screenshot>C:\Users\asier\Desktop\Imagen de WhatsApp 2024-06-10 a las 21.57.08_bb514301.jpg</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\EYETECH®\EYETECH_Glaucoma\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\EYETECH_Glaucoma.exe\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\EYETECH_Glaucoma.exe\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\EYETECH_Glaucoma.exe\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\EYETECH_Glaucoma.exe</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments</param.help.text>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.email />
+      <param.description />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\appDiagnostico.mlapp</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\Alianzas.png</file>
+      <file>${PROJECT_ROOT}\asterisco rojo.png</file>
+      <file>${PROJECT_ROOT}\Contacto.jpeg</file>
+      <file>${PROJECT_ROOT}\Declaracion.jpeg</file>
+      <file>${PROJECT_ROOT}\Declaración UE de conformidad.pdf</file>
+      <file>${PROJECT_ROOT}\etiqueta.png</file>
+      <file>${PROJECT_ROOT}\Etiqueta_final.pdf</file>
+      <file>${PROJECT_ROOT}\Flecha.png</file>
+      <file>${PROJECT_ROOT}\glaucoma mal.jpeg</file>
+      <file>${PROJECT_ROOT}\glaucoma.jpeg</file>
+      <file>${PROJECT_ROOT}\image_0058.jpg</file>
+      <file>${PROJECT_ROOT}\image_0329.jpg</file>
+      <file>${PROJECT_ROOT}\Imagen1.png</file>
+      <file>${PROJECT_ROOT}\ImagenInstrucciones.png</file>
+      <file>${PROJECT_ROOT}\Instrucciones.pdf</file>
+      <file>${PROJECT_ROOT}\modelo_final.m</file>
+      <file>${PROJECT_ROOT}\ojo.png</file>
+      <file>${PROJECT_ROOT}\Participantes.png</file>
+      <file>${PROJECT_ROOT}\personas.jpg</file>
+      <file>${PROJECT_ROOT}\ScatImages_mean.m</file>
+      <file>${PROJECT_ROOT}\sobre eyetech.png</file>
+      <file>${PROJECT_ROOT}\textura-abstracta-azul.jpg</file>
+      <file>${PROJECT_ROOT}\TrainingFeatures_glau_gray.csv</file>
+      <file>${PROJECT_ROOT}\TrainingFeatures_norm_gray.csv</file>
+      <file>${PROJECT_ROOT}\web.jpeg</file>
+      <file>${PROJECT_ROOT}\WebVisita.png</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\EYETECH_Glaucoma.exe\for_testing" name="EYETECH_Glaucoma.exe" optional="false">C:\Users\asier\Desktop\mondra\3\3.2\PBL VI\Image database\PBL_grupo_1\Interfaz\EYETECH_Glaucoma.exe\for_testing\EYETECH_Glaucoma.exe</file>
+      <file location="${PROJECT_ROOT}\EYETECH_Glaucoma.exe\for_testing" name="splash.png" optional="false">C:\Users\asier\Desktop\mondra\3\3.2\PBL VI\Image database\PBL_grupo_1\Interfaz\EYETECH_Glaucoma.exe\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\EYETECH_Glaucoma.exe\for_testing" name="readme.txt" optional="true">C:\Users\asier\Desktop\mondra\3\3.2\PBL VI\Image database\PBL_grupo_1\Interfaz\EYETECH_Glaucoma.exe\for_testing\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2022b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
