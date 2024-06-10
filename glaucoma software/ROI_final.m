@@ -5,8 +5,10 @@ addpath(genpath("images"));
 % Seleccionar todas las imagenes de una carpeta
 path=uigetdir;
 f = fullfile(path);
-%Imds = imageDatastore(f,'IncludeSubFolders',true,'FileExtensions','.jpg','LabelSource','foldernames');
+
 Imds = imageDatastore(f,'FileExtensions','.jpg','LabelSource','foldernames');
+%'IncludeSubFolders',true
+
 names = cell(1,length(Imds.Files));
 for i = 1:length(Imds.Files)
     parts = strsplit(Imds.Files{i}, '\');
@@ -14,9 +16,10 @@ for i = 1:length(Imds.Files)
 end
 
 % Donde guardar el ROI
-filePath = 'images separadas/buena calidad resto/glau/ROI';
+filePath = 'images separadas/comparar ROIs/ROI_2';
 
 sizes = [2424 3004];
+pixels = sizes(1)*sizes(2);
 sizes_ROI = [801 801];
 radius = 1100;
 n = 400;
@@ -34,11 +37,11 @@ for i = 1:length(names)
 
     I = imresize(I,sizes); 
     
-    I2 = I(:,:,2);
+    I2 = I(:,:,2); %get green channel
     I2 = I2 .* I3;    
     
-    [valores_ordenados, indices] = sort(I2(:), 'descend');
-    top = indices(1:1000);
+    [~, indices] = sort(I2(:), 'descend');
+    top = indices(1:round(pixels*0.0015)); % get brightest 0.15% of pixels
     
     [posiciones_y, posiciones_x] = ind2sub(size(I2), top);
 
@@ -46,21 +49,8 @@ for i = 1:length(names)
     meany = round(mean(posiciones_y));
     
     ROI = I(max(1,meany-n):min(sizes(1),meany+n),max(1, meanx-n):min(sizes(2),meanx+n),:);
-
-%     [~, indices] = sort(I_crop(:), 'descend');
-%     top = indices(1:4000);
-%     
-%     [posiciones_y, posiciones_x] = ind2sub(size(I_crop), top);
-%     
-%     meanx2 = round(mean(posiciones_x));
-%     meany2 = round(mean(posiciones_y));
-%     
-%     meanx3 = max(1, meanx-n) + meanx2;
-%     meany3 = max(1,meany-n) + meany2;    
-%        
-%     ROI = I(max(1,meany3-n):min(sizes(1),meany3+n),max(1, meanx3-n):min(sizes(2),meanx3+n),:);
     
-    if size(ROI) ~= [801 801 3]
+    if sum(size(ROI) ~= [801 801 3])>0
         ROI = imresize(ROI,sizes_ROI); 
     end
 
