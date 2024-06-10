@@ -12,7 +12,7 @@
 				<div class= "head">
 			
 					<div class= "logo">
-						<a href="index.html" onclick="return confirmLogout()">EYETECH<img src="Logo.png" alt="Logo de la empresa" style="float:left; width:70px"/></a>
+						<a href="index.html" onclick="return confirmLogout()">EYETECH<img src="Logo.png" alt="Logo de la empresa" style="float:left; width:70px; margin-top:12.5px;"/></a>
 					</div>
 					
 					<nav class="navegacion">
