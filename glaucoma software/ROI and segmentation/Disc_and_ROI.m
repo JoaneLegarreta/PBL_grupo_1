@@ -3,6 +3,7 @@ clear; close all; clc
 path=uigetdir;
 f = fullfile(path);
 addpath(genpath(f));
+
 % Imds = imageDatastore(f,'IncludeSubFolders',true,'FileExtensions','.jpg','LabelSource','foldernames');
 Imds = imageDatastore(f,'FileExtensions','.jpg','LabelSource','foldernames');
 
@@ -14,7 +15,7 @@ end
 
 sizes_ROI = [701 701];
 
-for aa = 134:length(names)  
+for aa = 1:length(names)  
     
     file = names{aa};
     I = imread(file);
@@ -22,7 +23,7 @@ for aa = 134:length(names)
     I_g = im2double(rgb2gray(I));
     
     sizes = size(I);
-    n_pixel = sizes(1)*sizes(2);
+    pixel = sizes(1)*sizes(2);
     
     I1 = I(:,:,1);
     I2 = I(:,:,2);
@@ -56,15 +57,15 @@ for aa = 134:length(names)
     
     I4 = ones(sizes(1), sizes(2));
     
-    if m1(3)<180 || sum(IB1(:))<n_pixel*0.4 && cont(1)<4*10^4 && sum(IB1(:))>n_pixel*0.1  && p1>10
+    if m1(3)<180 || sum(IB1(:))<pixel*0.4 && cont(1)<4*10^4 && sum(IB1(:))>pixel*0.1  && p1>10
         I4 = I4 .* IB1;
     end
     
-    if m2(3)>30 && sum(IB2(:))<n_pixel*0.4 && cont(2)<4*10^4
+    if m2(3)>30 && sum(IB2(:))<pixel*0.4 && cont(2)<4*10^4
         I4 = I4 .* IB2;
     end
     
-    if m3(3)>30 && sum(IB3(:))<n_pixel*0.4 && cont(3)<4*10^4 && p3>10
+    if m3(3)>30 && sum(IB3(:))<pixel*0.4 && cont(3)<4*10^4 && p3>10
         I4 = I4 .* IB3;        
     end
     
@@ -83,50 +84,32 @@ for aa = 134:length(names)
     I9 = I7+I8;
     I9 = imbinarize(I9,0);
     
-    Disc = bwareafilt(I9,[1000 10000000000]);
-    Disc = bwareafilt(Disc,3);
+    Disc = bwareafilt(I9,3);
     Disc = imfill(Disc, 'holes');
 
-    imshow(Disc)
     
     [posiciones_y, posiciones_x] = ind2sub(size(Disc), find(Disc==1));
-    % plot(posiciones_x,posiciones_y,'*')
     
     centro_x1 = round(mean(posiciones_x));
     centro_y1 = round(mean(posiciones_y));
     
-    % Definir el radio máximo
     radio_maximo = 300;
-    % rectangle('Position', [centro_x1-radio_maximo, centro_y1-radio_maximo, 2*radio_maximo, 2*radio_maximo], 'Curvature', [1, 1], 'EdgeColor', 'r', 'LineWidth', 2);
-    
-    % Crear un vector de ángulos desde 0 hasta 360 grados
-    % angulos = linspace(0, 2*pi, 360);
     angulos = linspace(0, 2*pi, 20);
-    
-    % Inicializar un vector para almacenar las coordenadas del último píxel blanco
-    ultimos_pixeles = zeros(size(angulos));
-    
+        
     x_border = zeros(1,length(angulos));
     y_border = zeros(1,length(angulos));
     ultimo_radio = zeros(1,length(angulos));
     
-    % Recorrer cada ángulo
     for i = 1:length(angulos)
-        % Calcular las coordenadas del punto final de la línea
         x_final = round(centro_x1 + radio_maximo * cos(angulos(i)));
         y_final = round(centro_y1 + radio_maximo * sin(angulos(i)));
     
-        % Obtener el perfil de intensidad a lo largo de la línea
         perfil = improfile(Disc, [centro_x1, x_final], [centro_y1, y_final],radio_maximo);
-    %     plot([centro_x1, x_final], [centro_y1, y_final]) %plotear las lineas
-    
-        % Encontrar los índices de los píxeles blancos en el perfil
         indices_blancos = find(perfil > 0);
     
         if isempty(indices_blancos)
-            ultimo_radio(i)=300;
+            ultimo_radio(i) = radio_maximo;
         else
-            % Almacenar las coordenadas del último píxel blanco
             ultimo_radio(i) = indices_blancos(end);    
         end
     
@@ -172,21 +155,15 @@ for aa = 134:length(names)
     Disc = imfill(Disc, 'holes');
     
     for i = 1:length(angulos)
-        % Calcular las coordenadas del punto final de la línea
         x_final = round(centro_x1 + radio_maximo * cos(angulos(i)));
         y_final = round(centro_y1 + radio_maximo * sin(angulos(i)));
     
-        % Obtener el perfil de intensidad a lo largo de la línea
         perfil = improfile(Disc, [centro_x1, x_final], [centro_y1, y_final],radio_maximo);
-    %     plot([centro_x1, x_final], [centro_y1, y_final]) %plotear las lineas
-    
-        % Encontrar los índices de los píxeles blancos en el perfil
         indices_blancos = find(perfil > 0);
     
         if isempty(indices_blancos)
             ultimo_radio(i)=300;
         else
-            % Almacenar las coordenadas del último píxel blanco
             ultimo_radio(i) = indices_blancos(end);    
         end
     
@@ -204,7 +181,7 @@ for aa = 134:length(names)
     n = 350;
     ROI = I(max(1,centro_y1-n):min(sizes(1),centro_y1+n),max(1, centro_x1-n):min(sizes(2),centro_x1+n),:);
 
-    if sum(size(ROI) ~= [701 701 3])
+    if sum(size(ROI) ~= [701 701 3])>0
         ROI = imresize(ROI,sizes_ROI); 
     end
 
